@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Bar-Linder-12-08-2021/static/css/main.b3d2be29.chunk.css",
+    "main.css": "/Bar-Linder-12-08-2021/static/css/main.505cf005.chunk.css",
     "main.js": "/Bar-Linder-12-08-2021/static/js/main.a349c698.chunk.js",
     "main.js.map": "/Bar-Linder-12-08-2021/static/js/main.a349c698.chunk.js.map",
     "runtime-main.js": "/Bar-Linder-12-08-2021/static/js/runtime-main.a1bbd651.js",
@@ -10,7 +10,7 @@
     "static/js/2.9f615b7a.chunk.js.map": "/Bar-Linder-12-08-2021/static/js/2.9f615b7a.chunk.js.map",
     "index.html": "/Bar-Linder-12-08-2021/index.html",
     "static/css/2.577fac57.chunk.css.map": "/Bar-Linder-12-08-2021/static/css/2.577fac57.chunk.css.map",
-    "static/css/main.b3d2be29.chunk.css.map": "/Bar-Linder-12-08-2021/static/css/main.b3d2be29.chunk.css.map",
+    "static/css/main.505cf005.chunk.css.map": "/Bar-Linder-12-08-2021/static/css/main.505cf005.chunk.css.map",
     "static/js/2.9f615b7a.chunk.js.LICENSE.txt": "/Bar-Linder-12-08-2021/static/js/2.9f615b7a.chunk.js.LICENSE.txt",
     "static/media/cloudy.9d434199.svg": "/Bar-Linder-12-08-2021/static/media/cloudy.9d434199.svg",
     "static/media/rain.ec9a02b0.svg": "/Bar-Linder-12-08-2021/static/media/rain.ec9a02b0.svg",
@@ -20,7 +20,7 @@
     "static/js/runtime-main.a1bbd651.js",
     "static/css/2.577fac57.chunk.css",
     "static/js/2.9f615b7a.chunk.js",
-    "static/css/main.b3d2be29.chunk.css",
+    "static/css/main.505cf005.chunk.css",
     "static/js/main.a349c698.chunk.js"
   ]
 }
