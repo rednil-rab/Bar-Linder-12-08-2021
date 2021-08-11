@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/bar-linder-12-08-2021/static/css/main.b3d2be29.chunk.css",
+    "main.js": "/bar-linder-12-08-2021/static/js/main.a349c698.chunk.js",
+    "main.js.map": "/bar-linder-12-08-2021/static/js/main.a349c698.chunk.js.map",
+    "runtime-main.js": "/bar-linder-12-08-2021/static/js/runtime-main.ab3550dd.js",
+    "runtime-main.js.map": "/bar-linder-12-08-2021/static/js/runtime-main.ab3550dd.js.map",
+    "static/css/2.577fac57.chunk.css": "/bar-linder-12-08-2021/static/css/2.577fac57.chunk.css",
+    "static/js/2.9f615b7a.chunk.js": "/bar-linder-12-08-2021/static/js/2.9f615b7a.chunk.js",
+    "static/js/2.9f615b7a.chunk.js.map": "/bar-linder-12-08-2021/static/js/2.9f615b7a.chunk.js.map",
+    "index.html": "/bar-linder-12-08-2021/index.html",
+    "static/css/2.577fac57.chunk.css.map": "/bar-linder-12-08-2021/static/css/2.577fac57.chunk.css.map",
+    "static/css/main.b3d2be29.chunk.css.map": "/bar-linder-12-08-2021/static/css/main.b3d2be29.chunk.css.map",
+    "static/js/2.9f615b7a.chunk.js.LICENSE.txt": "/bar-linder-12-08-2021/static/js/2.9f615b7a.chunk.js.LICENSE.txt",
+    "static/media/cloudy.9d434199.svg": "/bar-linder-12-08-2021/static/media/cloudy.9d434199.svg",
+    "static/media/rain.ec9a02b0.svg": "/bar-linder-12-08-2021/static/media/rain.ec9a02b0.svg",
+    "static/media/sunny.cf98dcc9.svg": "/bar-linder-12-08-2021/static/media/sunny.cf98dcc9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab3550dd.js",
+    "static/css/2.577fac57.chunk.css",
+    "static/js/2.9f615b7a.chunk.js",
+    "static/css/main.b3d2be29.chunk.css",
+    "static/js/main.a349c698.chunk.js"
+  ]
+}
