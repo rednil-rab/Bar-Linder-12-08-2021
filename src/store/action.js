@@ -6,3 +6,4 @@ export const TOGGLE_METRIC = 'TOGGLE_METRIC';
 export const UPDATE_DAYS = 'UPDATE_DAYS';
 export const UPDATE_KEY = 'UPDATE_KEY';
 export const UPDATE_FAVORITES = 'UPDATE_FAVORITES';
+export const TOGGLE_FIRST = 'TOGGLE_FIRST';

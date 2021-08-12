@@ -1,10 +1,7 @@
 import React from 'react';
-import Image from './cloudy.svg';
 import Switch from '@material-ui/core/Switch';
-import { IconButton } from '@material-ui/core';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { withStyles } from '@material-ui/core/styles';
-import FavoriteIcon from '@material-ui/icons/Favorite';
 import { useDispatch, useSelector } from 'react-redux';
 import * as action from '../../../../store/action';
 import * as Icon from 'react-bootstrap-icons';
@@ -23,9 +20,9 @@ const IOSSwitch = withStyles((theme) => ({
       transform: 'translateX(16px)',
       color: theme.palette.common.white,
       '& + $track': {
-        backgroundColor: '#ffffff',
+        backgroundColor: '#242132',
         opacity: 1,
-        border: 'none',
+        border: `1px solid ${theme.palette.grey[400]}`,
       },
     },
     '&$focusVisible $thumb': {
@@ -69,12 +66,12 @@ export default function Dashboard(props) {
   const isFavorite = useSelector(state => state.isFavorite);
 
   const handleChange = () => {
-    dispatch({type: action.TOGGLE_METRIC})
+    dispatch({ type: action.TOGGLE_METRIC })
   }
   const handleClick = () => {
-    dispatch({type: action.UPDATE_FAVORITES})
+    dispatch({ type: action.UPDATE_FAVORITES })
   }
-  
+
   return (
     <div className="dashboard">
       <div className="weather-widget">
@@ -86,15 +83,20 @@ export default function Dashboard(props) {
 
         </div>
       </div>
-      <FormControlLabel
-        control={<IOSSwitch checked={props.metric} name="checkedB" onChange={handleChange} label={'dark'} />}
+      <div >
+        <FormControlLabel
+          control={<IOSSwitch checked={props.metric} name="checkedB" onChange={handleChange} label={'dark'} />}
 
-      />
-      {
-        isFavorite ? <Icon.HeartFill onClick={()=>handleClick()} className="favorites-icon"style={{ color: '#fe0000' }}/> :<Icon.Heart onClick={()=>handleClick()} className="favorites-icon"style={{ color: props.dark ? '#ffffff' : '#000000' }} />  
-      }
-      
+        />
+          <h3>{props.metric ? 'Celcius' : 'Fahrenheit'}</h3>
+      </div>
 
-    </div>
-  )
+
+        {
+          isFavorite ? <Icon.HeartFill onClick={() => handleClick()} className="favorites-icon" style={{ color: '#fe0000' }} /> : <Icon.Heart onClick={() => handleClick()} className="favorites-icon" style={{ color: props.dark ? '#ffffff' : '#000000' }} />
+        }
+
+
+      </div>
+      )
 }

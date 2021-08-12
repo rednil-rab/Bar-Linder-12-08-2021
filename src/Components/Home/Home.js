@@ -8,7 +8,7 @@ import './home.css'
 
 export default function Home() {
     return (
-        <Route exec path="/home" >
+        <Route exec path="/" >
         <div className='home'>
             <SearchBar />
             <MainContainer />

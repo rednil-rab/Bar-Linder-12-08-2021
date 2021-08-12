@@ -1,5 +1,4 @@
 import React from 'react';
-import image from '../Dashboard/cloudy.svg';
 import { useSelector } from 'react-redux';
 import * as utils from '../../../../utils'
 

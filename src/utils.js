@@ -4,7 +4,11 @@ import rainny from './images/rain.svg';
 
 export const ACCU_WEATHER_HOST = 'https://dataservice.accuweather.com';
 // export const API_KEY = 'ALY2AtsDuGp5HjSxZkHRZsfOiWmAtVco';
-export const API_KEY = 'GU2OTPQUz1mECqPOZOVdshtwt64h4pD5';
+// export const API_KEY = 'GU2OTPQUz1mECqPOZOVdshtwt64h4pD5';
+// export const API_KEY = 'OjjecWaBfDrQauHwSlDuGTKjwZLZCXm6';
+// export const API_KEY = 'fzGigpqW5XWJWlLMkw8m4HFusxI3gaQo';
+export const API_KEY = 'nmMZBObVPEUUAOHrgJXyOAA1XVhtOTP1';
+
 export const weekDayConvertor = new Array(7);
 weekDayConvertor[0] = "Sunday";
 weekDayConvertor[1] = "Monday";
@@ -63,19 +67,6 @@ export const containsObject = (list, obj) => {
 	return false;
 }
 
-const sun = new RegExp('/sun/');
-const cloud = new RegExp('/cloud/');
-const rain = new RegExp('/rain/');
-
-
-const checkSun = (string) => {
-	if (string.toLowerCase().includes('sun')) {
-		return true
-	} else {
-		return false
-	}
-}
-
 export const imageDispenser = (string) => {
 
 	try {
@@ -85,6 +76,8 @@ export const imageDispenser = (string) => {
 				return sunny
 			case string.toLowerCase().includes('rain'):
 				return rainny
+			case string.toLowerCase().includes('clear'):
+				return sunny
 			default:
 				return cloudy
 		}
@@ -93,3 +86,17 @@ export const imageDispenser = (string) => {
 	}
 
 }
+
+export const makeDayArray = (array) => {
+    let days = array.map(day => {
+      let weekday = new Date(day.Date)
+      return {
+        weekday: weekDayConvertor[weekday.getDay()],
+        celsius: Math.ceil(day.Temperature.Maximum.Value) ,
+        fahrenheit: cToF(Math.ceil(day.Temperature.Maximum.Value)),
+        condition: day.Day.IconPhrase
+      }
+    });
+    
+    return days
+  }

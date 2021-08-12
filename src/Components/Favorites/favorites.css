@@ -23,8 +23,10 @@
 }
 .favorite-card h1 {
     font-size:1.7vw;
+    text-decoration: none;
 }
 
 .favorite-card h2 {
     font-size:1.7vw;
+    text-decoration: none;
 }

@@ -1,13 +1,13 @@
 .navbar {
-    position: absolute;
+    position: relative;
     top: 0;
     width: 100vw;
     height: 13%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 3%;
-    transition: color 300ms ease;
+    padding: 1%;
+    transition: color .3s ease;
 }
 
 .navbar h1 {
