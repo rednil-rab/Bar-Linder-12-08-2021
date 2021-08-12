@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Bar-Linder-12-08-2021/static/css/main.d6243899.chunk.css",
-    "main.js": "/Bar-Linder-12-08-2021/static/js/main.9dcfbe09.chunk.js",
-    "main.js.map": "/Bar-Linder-12-08-2021/static/js/main.9dcfbe09.chunk.js.map",
+    "main.js": "/Bar-Linder-12-08-2021/static/js/main.1f9324c9.chunk.js",
+    "main.js.map": "/Bar-Linder-12-08-2021/static/js/main.1f9324c9.chunk.js.map",
     "runtime-main.js": "/Bar-Linder-12-08-2021/static/js/runtime-main.a1bbd651.js",
     "runtime-main.js.map": "/Bar-Linder-12-08-2021/static/js/runtime-main.a1bbd651.js.map",
     "static/css/2.577fac57.chunk.css": "/Bar-Linder-12-08-2021/static/css/2.577fac57.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.577fac57.chunk.css",
     "static/js/2.3adacee4.chunk.js",
     "static/css/main.d6243899.chunk.css",
-    "static/js/main.9dcfbe09.chunk.js"
+    "static/js/main.1f9324c9.chunk.js"
   ]
 }
