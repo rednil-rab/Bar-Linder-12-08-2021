@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Bar-Linder-12-08-2021/static/css/main.505cf005.chunk.css",
-    "main.js": "/Bar-Linder-12-08-2021/static/js/main.2f20498c.chunk.js",
-    "main.js.map": "/Bar-Linder-12-08-2021/static/js/main.2f20498c.chunk.js.map",
+    "main.css": "/Bar-Linder-12-08-2021/static/css/main.d6243899.chunk.css",
+    "main.js": "/Bar-Linder-12-08-2021/static/js/main.9dcfbe09.chunk.js",
+    "main.js.map": "/Bar-Linder-12-08-2021/static/js/main.9dcfbe09.chunk.js.map",
     "runtime-main.js": "/Bar-Linder-12-08-2021/static/js/runtime-main.a1bbd651.js",
     "runtime-main.js.map": "/Bar-Linder-12-08-2021/static/js/runtime-main.a1bbd651.js.map",
     "static/css/2.577fac57.chunk.css": "/Bar-Linder-12-08-2021/static/css/2.577fac57.chunk.css",
-    "static/js/2.0047feee.chunk.js": "/Bar-Linder-12-08-2021/static/js/2.0047feee.chunk.js",
-    "static/js/2.0047feee.chunk.js.map": "/Bar-Linder-12-08-2021/static/js/2.0047feee.chunk.js.map",
+    "static/js/2.3adacee4.chunk.js": "/Bar-Linder-12-08-2021/static/js/2.3adacee4.chunk.js",
+    "static/js/2.3adacee4.chunk.js.map": "/Bar-Linder-12-08-2021/static/js/2.3adacee4.chunk.js.map",
     "index.html": "/Bar-Linder-12-08-2021/index.html",
     "static/css/2.577fac57.chunk.css.map": "/Bar-Linder-12-08-2021/static/css/2.577fac57.chunk.css.map",
-    "static/css/main.505cf005.chunk.css.map": "/Bar-Linder-12-08-2021/static/css/main.505cf005.chunk.css.map",
-    "static/js/2.0047feee.chunk.js.LICENSE.txt": "/Bar-Linder-12-08-2021/static/js/2.0047feee.chunk.js.LICENSE.txt",
+    "static/css/main.d6243899.chunk.css.map": "/Bar-Linder-12-08-2021/static/css/main.d6243899.chunk.css.map",
+    "static/js/2.3adacee4.chunk.js.LICENSE.txt": "/Bar-Linder-12-08-2021/static/js/2.3adacee4.chunk.js.LICENSE.txt",
     "static/media/cloudy.9d434199.svg": "/Bar-Linder-12-08-2021/static/media/cloudy.9d434199.svg",
     "static/media/rain.ec9a02b0.svg": "/Bar-Linder-12-08-2021/static/media/rain.ec9a02b0.svg",
     "static/media/sunny.cf98dcc9.svg": "/Bar-Linder-12-08-2021/static/media/sunny.cf98dcc9.svg"
@@ -19,8 +19,8 @@
   "entrypoints": [
     "static/js/runtime-main.a1bbd651.js",
     "static/css/2.577fac57.chunk.css",
-    "static/js/2.0047feee.chunk.js",
-    "static/css/main.505cf005.chunk.css",
-    "static/js/main.2f20498c.chunk.js"
+    "static/js/2.3adacee4.chunk.js",
+    "static/css/main.d6243899.chunk.css",
+    "static/js/main.9dcfbe09.chunk.js"
   ]
 }
