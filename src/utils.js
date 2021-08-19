@@ -3,11 +3,11 @@ import cloudy from './images/cloudy.svg';
 import rainny from './images/rain.svg';
 
 export const ACCU_WEATHER_HOST = 'https://dataservice.accuweather.com';
-// export const API_KEY = 'ALY2AtsDuGp5HjSxZkHRZsfOiWmAtVco';
+export const API_KEY = 'ALY2AtsDuGp5HjSxZkHRZsfOiWmAtVco';
 // export const API_KEY = 'GU2OTPQUz1mECqPOZOVdshtwt64h4pD5';
 // export const API_KEY = 'OjjecWaBfDrQauHwSlDuGTKjwZLZCXm6';
 // export const API_KEY = 'fzGigpqW5XWJWlLMkw8m4HFusxI3gaQo';
-export const API_KEY = 'nmMZBObVPEUUAOHrgJXyOAA1XVhtOTP1';
+// export const API_KEY = 'nmMZBObVPEUUAOHrgJXyOAA1XVhtOTP1';
 
 export const weekDayConvertor = new Array(7);
 weekDayConvertor[0] = "Sunday";

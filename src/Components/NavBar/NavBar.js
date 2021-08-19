@@ -81,7 +81,7 @@ export default function NavBar() {
     return (
         <div style={style} className="navbar">
             <h1>
-                Herolo <span>(is now abra)</span><br></br> Weather App
+               Weather App
             </h1><div>
             <FormControlLabel
         control={<IOSSwitch checked={dark} onChange={handleChange} name="checkedB" label={'dark'}/>}

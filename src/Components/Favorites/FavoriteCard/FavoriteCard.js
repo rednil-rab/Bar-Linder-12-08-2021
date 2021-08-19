@@ -5,6 +5,7 @@ import * as requests from '../../../requests/requests'
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
+import * as action from '../../../store/action';
 
 export default function FavoriteCard(props) {
     const dispatch = useDispatch();
@@ -33,7 +34,9 @@ export default function FavoriteCard(props) {
     }
 
     const handleClick = () => {
-        requests.citySelection({ key: props.id, value: props.city }, dispatch, notify)
+        dispatch({ type: action.UPDATE_KEY, key: props.id, city: props.city });
+        requests.citySelection({ key: props.id, value: props.city }, dispatch, notify);
+        requests.nextFiveDays({key: props.id, value: props.city},dispatch,notify);
     }
     getCity();
     return (

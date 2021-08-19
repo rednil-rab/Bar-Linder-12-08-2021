@@ -3,7 +3,6 @@ import Select from 'react-select';
 import {useDispatch, useSelector } from 'react-redux';
 import * as action from '../../../store/action';
 import * as utils from '../../../utils';
-import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import * as requests from '../../../requests/requests'
 
@@ -23,27 +22,13 @@ export default function SearchBar() {
   useEffect(()=>{
     
     if (!first) {
-      requests.citySelection({key: '215854', value: 'Tel Aviv'},dispatch,notify)
+      dispatch({ type: action.UPDATE_KEY, key: '215854', city: 'Tel Aviv' });
+      requests.citySelection({key: '215854', value: 'Tel Aviv'},dispatch,notify);
+      requests.nextFiveDays({key: '215854', value: 'Tel Aviv'},dispatch,notify);
       dispatch({type: action.TOGGLE_FIRST})
     }
   },[]);
   
-
-
-
-
-
-
-  function  suppressNonEng(e)
-  {
-    let key;
-    if(window.event)  key = window.event.keyCode;     //IE
-    else  key = e.which;     //firefox
-
-
-    if(key >128)  return false;
-    else  return true;
-  }
 
   const handleInput = utils.debounce( async (q) => {
     try {
@@ -58,7 +43,9 @@ export default function SearchBar() {
 
 
   const handleChange = async (item) => {
+    dispatch({ type: action.UPDATE_KEY, key: item.key, city: item.value });
     requests.citySelection(item,dispatch,notify);
+    requests.nextFiveDays(item,dispatch,notify);
   }
 
   return (
@@ -66,7 +53,6 @@ export default function SearchBar() {
     <Select
       onChange={handleChange}
       onInputChange={handleInput}
-      onKeyDown={(event)=> suppressNonEng(event)}
       options={cities} />
     <ToastContainer />
     </div>
