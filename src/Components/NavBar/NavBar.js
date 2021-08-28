@@ -32,7 +32,8 @@ export default function NavBar() {
   `
   const SwitchCOntainer = styled.div`
   display: flex;
-  flex-direction: ${windowSize.width < 900 ? 'column' : 'row'}
+  flex-direction: ${windowSize.width < 900 ? 'column' : 'row'};
+  align-items: center;
   `
   const NavBar = styled.div`
   position: relative;
@@ -53,7 +54,7 @@ const br = windowSize.width < 900 ? <br></br> : '';
       </StyledH1>
       <SwitchCOntainer>
         <FormControlLabel
-          control={<IOSSwitch checked={dark} onChange={handleChange} name="checkedB" label={'dark'} />}
+          style={{marginRight: 'unset'}} control={<IOSSwitch checked={dark} onChange={handleChange} name="checkedB" label={'dark'} />}
         />
         {dark ? 'dark mode' : 'light mode'}
       </SwitchCOntainer>
