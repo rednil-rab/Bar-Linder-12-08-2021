@@ -6,10 +6,13 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 import * as action from '../../../store/action';
+import styled from 'styled-components';
+import useWindowSize from '../../../hooks/useWindowsize';
 
 export default function FavoriteCard(props) {
     const dispatch = useDispatch();
-    const dark = useSelector(state => state.dark);
+    const windowSize = useWindowSize();
+
     const metric = useSelector(state => state.metric);
     const [celsius, setCel] = useState('');
     const [fahrenheit, setFar] = useState('');
@@ -39,13 +42,35 @@ export default function FavoriteCard(props) {
         requests.nextFiveDays({key: props.id, value: props.city},dispatch,notify);
     }
     getCity();
+
+    const Container = styled.div`
+    height: 35%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: ${props.mode ? '#2D2C41' : 'rgba(255, 255, 255, 0.2)'};
+    color: ${props.mode ? '#ffffff' : '#000000'};
+    `
+
+    const StyledH1 = styled.h1`
+    font-size:  ${windowSize.width < 900 ? '5vw': '1.7vw'};
+    text-decoration: none;
+    `
+
+    const StyleImg = styled.img`
+    height: 40%;
+    object-fit: contain;
+    `
     return (
         <Link to="/home">
-            <div onClick={() => handleClick()} style={{ background: dark ? '#2D2C41' : 'rgba(255, 255, 255, 0.2)', color: dark ? '#ffffff' : '#000000', }} className="favorite-card" >
-                <h1> {props.city}<br></br> {metric ? `${celsius}°c` : `${fahrenheit}°f`}</h1>
-                <h2> {condition} </h2> <img src={utils.imageDispenser(condition)} alt="weather_image" />
+            <Container onClick={() => handleClick()}>
+                <StyledH1> {props.city}<br></br> {metric ? `${celsius}°c` : `${fahrenheit}°f`}</StyledH1>
+                <StyledH1> {condition} </StyledH1> 
+                <StyleImg src={utils.imageDispenser(condition)} alt="weather_image" />
                 <ToastContainer />
-            </div>
+            </Container>
         </Link>
 
     )

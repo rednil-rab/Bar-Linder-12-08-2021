@@ -5,7 +5,7 @@ import * as action from '../../../store/action';
 import * as utils from '../../../utils';
 import { ToastContainer, toast } from 'react-toastify';
 import * as requests from '../../../requests/requests'
-
+import styled from 'styled-components';
 
 export default function SearchBar() {
   const dispatch = useDispatch();
@@ -29,7 +29,12 @@ export default function SearchBar() {
     }
   },[]);
   
-
+  const SearchContainer = styled.div`
+  width: 30%;
+  height: 5%;
+  background: transparent;
+  height: 3.5vw;
+  `
   const handleInput = utils.debounce( async (q) => {
     try {
       let result = await requests.getCities(q);
@@ -49,13 +54,13 @@ export default function SearchBar() {
   }
 
   return (
-    <div className="search-bar">
+    <SearchContainer >
     <Select
       onChange={handleChange}
       onInputChange={handleInput}
       options={cities} />
     <ToastContainer />
-    </div>
+    </SearchContainer >
 
   );
 }

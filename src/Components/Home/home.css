@@ -1,50 +1,3 @@
-.home {
-    width: 100%;
-    height: 89%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1%;
-    position: relative;
-}
-
-.search-bar {
-    width: 30%;
-    height: 5%;
-    background: transparent;
-    height: 3.5vw;
-    
-}
-
-.search-bar input {
-    background: transparent;
-    border: none;
-    width: 100%;
-    
-}
-.search-bar div:nth-child(1) div:nth-child(2) {
-    /* background: transparent; */
-}
-.search-bar select {
-    background: transparent;
-}
-.main-container {
-    width: 70%;
-    height: 70%;
-    margin-bottom: 7%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.dashboard {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-content: center;
-    width: 100%;
-}
 
 .weather-widget {
     display: flex;
@@ -64,16 +17,20 @@
     flex-direction: column;
     
 }
-
 .weather-widget div p {
     font-size: 1.5vw;
 }
 
-
-.forecast-div {
-    width: 100%;
-    height: 10%;
+@media screen and (max-width: 900px) {
+    .weather-widget img {
+        object-fit: contain;
+        height: 15vw;
+    }
+    .weather-widget div p {
+        font-size: 4vw;
+    }
 }
+
 
 .favorites-icon {
     width: 17%;
@@ -83,32 +40,13 @@
     margin-right: 10%;
     cursor: pointer;
 }
-
-.forecast-div {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    height: 45%;
-    align-items: flex-start;
+@media screen and (max-width: 900px) {
+    .favorites-icon {
+        width: 44%;
+        height: 50%;
+    }
 }
 
-.day-card {
-    width: 15%;
-    height: 90%;
-    border: solid 2px;
-    margin-bottom: 1vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-.day-card img {
-    object-fit: contain;
-    height: 40%;
-}
-.day-card h1 {
-    font-size: 1vw;
-}
-.day-card h2 {
-    font-size: 1vw;
-}
+
+
+

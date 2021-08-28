@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <div className="App" style={style}>
         <NavBar />
-        <Route exact path="/Bar-Linder-12-08-2021">
+        <Route exact path="/weather-app">
           <Redirect to="/home" />
         </Route>
         <Route exact path="/home" component={Home} />
