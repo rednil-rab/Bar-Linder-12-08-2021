@@ -1,5 +1,5 @@
 import React from 'react';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormControlLabel from '@mui/material/FormControlLabel';
 import { useDispatch, useSelector } from 'react-redux';
 import IOSSwitch from '../../../IOSSwitch/IOSSwitch';
 import * as action from '../../../../store/action';

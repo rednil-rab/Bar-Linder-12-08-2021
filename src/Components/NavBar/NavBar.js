@@ -3,7 +3,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import IOSSwitch from '../IOSSwitch/IOSSwitch';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormControlLabel from '@mui/material/FormControlLabel';
 import { useSelector, useDispatch } from 'react-redux';
 import * as action from '../../store/action';
 import useWindowSize from '../../hooks/useWindowsize';
