@@ -14,29 +14,29 @@ export default function Dashboard(props) {
   const windowSize = useWindowSize();
 
   const handleChange = () => {
-    dispatch({ type: action.TOGGLE_METRIC })
-  }
+    dispatch({ type: action.TOGGLE_METRIC });
+  };
   const handleClick = () => {
-    dispatch({ type: action.UPDATE_FAVORITES })
-  }
+    dispatch({ type: action.UPDATE_FAVORITES });
+  };
 
 
   const SwitchCOntainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  `
+  `;
   const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-content: center;
   width: 100%;
-  `
+  `;
   const IconContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: ${windowSize.width < 900 ? 'center' : 'flex-end'};
-  `
+  `;
 
   return (
     <Container >
@@ -53,16 +53,16 @@ export default function Dashboard(props) {
         <FormControlLabel
           style={{marginRight: 'unset'}}control={<IOSSwitch checked={props.metric} name="checkedB" onChange={handleChange} label={'dark'} />}
         />
-          <h3>{props.metric ? 'Celcius' : 'Fahrenheit'}</h3>
+        <h3>{props.metric ? 'Celcius' : 'Fahrenheit'}</h3>
       </SwitchCOntainer>
       <IconContainer>
-      {
+        {
           isFavorite ? <Icon.HeartFill onClick={() => handleClick()} className="favorites-icon" style={{ color: '#fe0000' }} /> : <Icon.Heart onClick={() => handleClick()} className="favorites-icon" style={{ color: props.dark ? '#ffffff' : '#000000', }} />
         }
       </IconContainer>
 
 
 
-      </Container >
-      )
+    </Container >
+  );
 }
