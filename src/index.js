@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { createStore} from 'redux';
 import { Provider} from 'react-redux';
 import reducer from './store/reducer';
@@ -14,12 +14,10 @@ const store = createStore(
   reducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
-
-ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}><App /></Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+const domNode = document.getElementById('root');
+const root = createRoot(domNode);
+root.render(
+  <Provider store={store} ><App/></Provider>
 );
 
 
